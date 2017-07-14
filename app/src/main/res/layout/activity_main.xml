@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestures"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadeEnabled="false"
+        android:fadeOffset="500000000"
+        android:gestureColor="#000000"
+        android:gestureStrokeType="multiple"
+        android:gestureStrokeWidth="10"
+        android:uncertainGestureColor="#000000" />
+
+</RelativeLayout>
