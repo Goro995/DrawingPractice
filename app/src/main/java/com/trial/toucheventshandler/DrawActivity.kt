@@ -24,13 +24,13 @@ class DrawActivity : Activity() {
         dv = DrawingView(this)
         setContentView(dv)
         mPaint = Paint()
-        mPaint!!.isAntiAlias = true
-        mPaint!!.isDither = true
-        mPaint!!.color = Color.RED
-        mPaint!!.style = Paint.Style.STROKE
-        mPaint!!.strokeJoin = Paint.Join.ROUND
-        mPaint!!.strokeCap = Paint.Cap.ROUND
-        mPaint!!.strokeWidth = 12f
+        mPaint?.isAntiAlias = true
+        mPaint?.isDither = true
+        mPaint?.color = Color.RED
+        mPaint?.style = Paint.Style.STROKE
+        mPaint?.strokeJoin = Paint.Join.ROUND
+        mPaint?.strokeCap = Paint.Cap.ROUND
+        mPaint?.strokeWidth = 12f
     }
 
     inner class DrawingView(internal var context: Context) : View(context) {
@@ -66,7 +66,7 @@ class DrawActivity : Activity() {
 
             canvas.drawBitmap(mBitmap!!, 0f, 0f, mBitmapPaint)
             canvas.drawPath(mPath, mPaint!!)
-            canvas.drawPath( circlePath,  circlePaint)
+            canvas.drawPath(circlePath,  circlePaint)
         }
 
         private var mX: Float = 0.toFloat()
